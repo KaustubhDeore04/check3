@@ -2,12 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>image-stream-hero</title>
+    <meta name="description" content="Scalable Technologies builds software, AI automation and marketing systems for growing businesses." />
+    <title>Scalable Technologies — Build and Grow</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <video id="scroll-video" muted playsinline preload="auto" aria-hidden="true">
+      <source src="background.mp4" type="video/mp4" />
+    </video>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Scalable Technologies home">SCALABLE<span>TECHNOLOGIES</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#technology">Technology</a>
+        <a href="#ai-automation">AI &amp; Automation</a><a href="#erp">ERP</a><a href="#marketing">Marketing</a>
+        <a class="nav-cta" href="#contact">Book a free consultation <i>↗</i></a>
+      </nav>
+    </header>
+
+    <main id="site-content"></main>
+
+    <footer class="site-footer" id="footer"></footer>
+    <script src="script.js"></script>
   </body>
 </html>
